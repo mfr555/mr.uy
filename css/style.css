@@ -1,0 +1,64 @@
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    padding-top: 76px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Forms */
+.form-control {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+/* Sections */
+section {
+    padding: 5rem 0;
+}
+
+/* Portfolio */
+.portfolio-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Badges */
+.badge {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+/* Icons */
+.lucide {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-lg {
+    width: 48px;
+    height: 48px;
+}
