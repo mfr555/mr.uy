@@ -1,3 +1,8 @@
+:root {
+    --naranja: #ed373d;
+    --violeta: #942687;
+}
+
 /* Base styles */
 body {
     font-family: 'Inter', sans-serif;
@@ -61,4 +66,40 @@ section {
 .icon-lg {
     width: 48px;
     height: 48px;
+}
+
+.plans h5 {
+    font-size: 1rem;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-naranja {
+    color: var(--naranja);
+}
+
+.bg-naranja {
+    background-color: var(--naranja);
+}
+
+.btn-naranja {
+    color: white;
+    background-color: var(--naranja);
+    border: 1px solid var(--naranja);
+}
+
+.text-violeta {
+    color: var(--violeta);
+}
+
+.bg-violeta {
+    background-color: var(--violeta);
+}
+
+.btn-violeta {
+    color: white;
+    background-color: var(--violeta);
+    border: 1px solid var(--violeta);
 }
