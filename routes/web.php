@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,12 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/sitemap.xml', function () {
-    return view('sitemap');
-});
-Route::get('/calculadoras', function () {
-    return view('calculadoras');
-});
+Route::get('/', [HomeController::class, 'home']);
+Route::get('/sitemap.xml', [HomeController::class, 'sitemap']);
+Route::get('/calculadoras', [HomeController::class, 'calculadoras']);

@@ -45,6 +45,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoY9CUG9s2eM4A2e3zU2KkEcqIw1xg9UjErz7P5gqWoK7hZ" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+    /* Oculta el cursor de texto en todo el sitio */
+    body, html, div, span, section, main, nav, footer {
+        user-select: text;      /* Permite seleccionar texto */
+        caret-color: transparent; /* Oculta el cursor de texto */
+    }
+
+    /* Pero permite el cursor en campos de formulario */
+    input, textarea, [contenteditable="true"] {
+        caret-color: auto;
+    }
+    </style>
 </head>
 
 <body>
@@ -88,7 +101,7 @@
                             <li><a class="dropdown-item" href="https://twitter.com/mrsolucionesdig" target="_blank"><i class="fab fa-x-twitter pr-2"></i>
                                 Twitter</a>
                             </li>
-                            <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=59897807023" target="_blank"><i class="fab fa-whatsapp pr-2"></i>
+                            <li><a class="dropdown-item text-success" href="https://api.whatsapp.com/send?phone=59897807023" target="_blank"><i class="fab fa-whatsapp pr-2"></i>
                                 WhatsApp</a>
                             </li>
                             <li><hr class="dropdown-divider"></li>
@@ -101,39 +114,6 @@
     </nav>
 
     <main>
-        <!--section id="social-top" class="bg-dark text-white py-2">
-            <div class="container">
-                <div class="row mt-4">
-                    <div class="col-lg-6"></div>
-                    <div class="col-lg-6">
-                        <div class="d-flex justify-content-center">
-                            <a href="https://www.linkedin.com/company/mr-soluciones-digitales" target="_blank"
-                                class="btn btn-outline-light btn-lg me-3">
-
-                            </a>
-                            <a href="https://www.instagram.com/solucionesdigitalesmr" target="_blank"
-                                class="btn btn-outline-light btn-lg me-3">
-
-                            </a>
-                            <a href="https://www.facebook.com/mrsolucionesdigitales" target="_blank"
-                                class="btn btn-outline-light btn-lg me-3">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://twitter.com/mrsolucionesdig" target="_blank"
-                                class="btn btn-outline-light btn-lg me-3">
-
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=59897807023" target="_blank"
-                                class="btn btn-outline-success btn-lg me-3">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section-->
-
         @yield('content')
 
         <section id="contact" class="py-5 bg-dark text-white">
@@ -224,7 +204,7 @@
 
     <footer class="bg-dark text-white text-center py-4">
         <p class="mb-0">© 2025 MR Soluciones Digitales. Todos los derechos reservados.</p>
-        <p class="mb-0 small my-3">Razón Social: Rodriguez Díaz, Matías Fabian</p>
+        <p class="mb-0 small my-3">Razón Social: Rodriguez Díaz, Matías Fabián</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
