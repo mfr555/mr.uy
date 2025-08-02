@@ -1,22 +1,38 @@
 @extends('layouts.webtemplate')
 
-@section('title', 'MR Soluciones Digitales')
+@section('title', 'Diseño Web | Desarrollo en la nube | Soporte IT | MR Soluciones Digitales')
 @section('description', 'MR Soluciones Digitales ofrece desarrollo de software a medida, aplicaciones web y móviles, servicios cloud y ciberseguridad para impulsar el crecimiento empresarial.')
-@section('keywords', 'desarrollo de software, aplicaciones web, aplicaciones móviles, servicios cloud, ciberseguridad, MR Soluciones Digitales')
+@section('keywords', 'desarrollo de software, aplicaciones web, aplicaciones móviles, soporte IT, servicios cloud, ciberseguridad, MR Soluciones Digitales')
 @section('image', 'https://images.unsplash.com/photo-1581472723648-909f4851d4ae?auto=format&fit=crop&w=800&q=80')
 
 @section('content')
+<script>
+    //pulse
+    document.addEventListener('DOMContentLoaded', () => {
+        const colors = ['var(--naranja)', 'var(--violeta)', '#ffffff'];
+        let index = 0;
+
+        setInterval(() => {
+        index = (index + 1) % colors.length;
+        document.querySelectorAll('.pulse').forEach(el => {
+            el.style.color = colors[index];
+        });
+        }, 3000);
+    });
+</script>
+
 <section id="home" class="bg-dark text-white min-vh-90 d-flex align-items-center">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h1 class="display-4 fw-bold mb-4">Transformando Ideas en Realidad Digital</h1>
-                <p class="lead mb-4">Creamos soluciones de software innovadoras que impulsan el crecimiento empresarial
-                    y el avance tecnológico.</p>
-                <a href="#services" class="btn btn-light btn-lg me-3">
-                    Servicios</a>
-                <a href="#contact" class="btn btn-outline-light btn-lg">
-                    Contacto</a>
+                <h2 class="display-4 fw-bold mb-4">Tecnología al servicio de tu empresa</h2>
+                <h1 class="lead pulse">Diseño Web, Desarrollo de aplicaciones y Soporte IT para Empresas</h1>
+                <p class="lead mb-4">
+                    Creamos soluciones de software innovadoras que impulsan el crecimiento empresarial
+                    y el avance tecnológico.
+                </p>
+                <a href="#contact" class="btn btn-light btn-lg me-3">
+                    Solicitar presupuesto gratis</a>
             </div>
             <div class="col-lg-6">
                 <div class="d-flex justify-content-center">
