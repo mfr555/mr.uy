@@ -44,7 +44,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoY9CUG9s2eM4A2e3zU2KkEcqIw1xg9UjErz7P5gqWoK7hZ" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"-->
 
     <style>
     /* Oculta el cursor de texto en todo el sitio */
@@ -158,23 +158,23 @@
                         <div class="d-flex align-items-center">
                             <span class="mr-3">Social </span>
                             <div class="d-flex justify-content-center">
-                                <a href="https://www.linkedin.com/company/mr-soluciones-digitales" target="_blank"
+                                <a href="https://www.linkedin.com/company/mr-soluciones-digitales" target="_blank" aria-label="Linkedin"
                                     class="btn btn-link p-2 m-2 text-light">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="https://www.instagram.com/solucionesdigitalesmr" target="_blank"
+                                <a href="https://www.instagram.com/solucionesdigitalesmr" target="_blank" aria-label="Instagram"
                                     class="btn btn-link p-2 m-2 text-light">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="https://www.facebook.com/mrsolucionesdigitales" target="_blank"
+                                <a href="https://www.facebook.com/mrsolucionesdigitales" target="_blank" aria-label="Facebook"
                                     class="btn btn-link p-2 m-2 text-light">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="https://twitter.com/mrsolucionesdig" target="_blank"
+                                <a href="https://twitter.com/mrsolucionesdig" target="_blank" aria-label="X (twitter)"
                                     class="btn btn-link p-2 m-2 text-light">
                                     <i class="fab fa-x-twitter"></i>
                                 </a>
-                                <a href="https://api.whatsapp.com/send?phone=59897807023" target="_blank"
+                                <a href="https://api.whatsapp.com/send?phone=59897807023" target="_blank" aria-label="WhatsApp"
                                     class="btn btn-link p-2 m-2 text-light">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
