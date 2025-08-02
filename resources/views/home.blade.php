@@ -162,17 +162,19 @@
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body text-center">
                         <div class="mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share-2">
-                                <circle cx="18" cy="5" r="3"></circle>
-                                <circle cx="6" cy="12" r="3"></circle>
-                                <circle cx="18" cy="19" r="3"></circle>
-                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                                <path d="M10 22v-5h4v5"/>
+                                <line x1="8" y1="6" x2="8" y2="6"/>
+                                <line x1="12" y1="6" x2="12" y2="6"/>
+                                <line x1="16" y1="6" x2="16" y2="6"/>
+                                <line x1="8" y1="10" x2="8" y2="10"/>
+                                <line x1="12" y1="10" x2="12" y2="10"/>
+                                <line x1="16" y1="10" x2="16" y2="10"/>
                             </svg>
                         </div>
-                        <h5 class="card-title">Social Media</h5>
-                        <p class="card-text text-muted">Administración de redes sociales para aumentar
-                            la presencia en línea y el compromiso con la audiencia.</p>
+                        <h5 class="card-title">Soporte empresarial</h5>
+                        <p class="card-text text-muted">Administración y soporte del capital digital de empresas</p>
                     </div>
                 </div>
             </div>
@@ -314,12 +316,98 @@
 
         <!-- Páginas Web -->
         <h3 class="mt-5 text-center">Páginas Web</h3>
-        <div class="row g-4">
+        <div class="row g-4 d-flex justify-content-around">
 
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-5">
                 <div class="card h-100 border-0 shadow-sm portfolio-card">
                     <div class="card-body">
-                        <img src="img/adh.jpg" alt="Web adh.uy" class="img-fluid rounded mb-3">
+                        <img src="img/ab.webp" alt="Web AB Estudio Jurídico" class="img-fluid rounded mb-3">
+                        <h5>AB Estudio Jurídico</h5>
+                        <p class="text-muted mb-3">
+                            Sitio web corporativo del Estudio Jurídico AB especializado en Derecho de Familia,
+                            centrado en la interacción inmediata de potenciales clientes a través de WhatsApp.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <a href="#web-corporativa" class="badge bg-light text-dark">Web Corporativa</a>
+                            <span class="badge bg-light text-dark">Laravel</span>
+                            <span class="badge bg-light text-dark">Blog</span>
+                            <span class="badge bg-light text-dark">Mejora contínua</span>
+                        </div>
+                        <a href="https://abestudiojuridico.com" target="_blank" class="btn btn-outline-dark btn-sm">
+                            abestudiojuridico.com
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-5">
+                <div class="card h-100 border-0 shadow-sm portfolio-card">
+                    <div class="card-body">
+                        <img src="img/duran.webp" alt="Web terapiaholistica.uy" class="img-fluid rounded mb-3">
+                        <h5>Terapia Holística - Sebastián Durán</h5>
+                        <p class="text-muted mb-3">
+                            Sitio web sencillo con mucho estilo destinado a dar a conocer la terapia floral
+                            integral ofrecida por el cliente.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <a href="#web-starter" class="badge bg-light text-dark">Web Starter</a>
+                            <span class="badge bg-light text-dark">Bootstrap</span>
+                            <span class="badge bg-light text-dark">Diseño de marca</span>
+                        </div>
+                        <a href="https://terapiaholistica.uy" target="_blank" class="btn btn-outline-dark btn-sm">
+                            terapiaholistica.uy
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-5">
+                <div class="card h-100 border-0 shadow-sm portfolio-card">
+                    <div class="card-body">
+                        <img src="img/340-1.webp" alt="Web Vamos por Mas" class="img-fluid rounded mb-3">
+                        <h5>Vamos por más - Lista 340</h5>
+                        <p class="text-muted mb-3">
+                            Págna web de una agrupación política, que luego de la elección optó por un plan en mejora
+                            contínua iterativa.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <a href="#web-corporativa" class="badge bg-light text-dark">Web estándar flexible</a>
+                            <span class="badge bg-light text-dark">Laravel</span>
+                            <span class="badge bg-light text-dark">Blog</span>
+                            <span class="badge bg-light text-dark">Mejora contínua</span>
+                        </div>
+                        <a href="https://vamospormas.uy" target="_blank" class="btn btn-outline-dark btn-sm">
+                            vamospormas.uy
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-5">
+                <div class="card h-100 border-0 shadow-sm portfolio-card">
+                    <div class="card-body">
+                        <img src="img/adh.webp" alt="Web adh.uy" class="img-fluid rounded mb-3">
                         <h5>ADH</h5>
                         <p class="text-muted mb-3">
                             Sitio web estilo landing de Alianza por La Dignidad Humana, ONG de Uruguay.
@@ -342,39 +430,10 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm portfolio-card">
-                    <div class="card-body">
-                        <img src="img/ab.jpg" alt="Web AB Estudio Jurídico" class="img-fluid rounded mb-3">
-                        <h5>AB Estudio Jurídico</h5>
-                        <p class="text-muted mb-3">
-                            Sitio web corporativo del Estudio Jurídico AB especializado en Derecho de Familia,
-                            centrado en la interacción inmediata de potenciales clientes a través de WhatsApp.
-                        </p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <a href="#web-corporativa" class="badge bg-light text-dark">Web Corporativa</a>
-                            <span class="badge bg-light text-dark">Laravel</span>
-                            <span class="badge bg-light text-dark">Blog</span>
-                            <span class="badge bg-light text-dark">Ayru UI</span>
-                        </div>
-                        <a href="https://abestudiojuridico.com" target="_blank" class="btn btn-outline-dark btn-sm">
-                            abestudiojuridico.com
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg></a>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <!-- Aplicaciones Web -->
-        <h3 class="mt-5 text-center">Aplicaciones en la nube</h3>
+        <!-- Aplicaciones -->
+        <h3 class="mt-5 text-center">Aplicaciones web</h3>
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 shadow-sm portfolio-card">
