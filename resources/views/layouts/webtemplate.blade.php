@@ -25,6 +25,7 @@
     <meta name="keywords" content="@yield('keywords')">
     <meta name="author" content="MR Soluciones Digitales">
     <meta name="robots" content="index, follow">
+    <meta name="business" content="Matías Fabián Rodríguez Díaz">
 
     <!-- Open Graph (Meta) Meta Tags -->
     <meta property="og:title" content="@yield('title')">
@@ -203,8 +204,10 @@
     </main>
 
     <footer class="bg-dark text-white text-center py-4">
-        <p class="mb-0">© 2025 MR Soluciones Digitales. Todos los derechos reservados.</p>
-        <p class="mb-0 small my-3">Razón Social: Rodriguez Díaz, Matías Fabián</p>
+        <p class="mb-0">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            Desarrollado por <a href="https://mr.uy" class="text-secondary">MR Soluciones Digitales</a> © {{ date('Y') }}
+        </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
