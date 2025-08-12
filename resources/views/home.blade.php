@@ -256,8 +256,8 @@
 <section id="plans" class="plans">
     <div class="container">
         <div class="text-center mb-5">
-            <h3 class="display-6 fw-bold mb-3">Desarrollo Web</h3>
-            <p class="lead text-muted">Planes accesibles de desarrollo e implementación web.</p>
+            <h3 class="display-6 fw-bold mb-3">Diseño Web</h3>
+            <p class="lead text-muted">Puedes comenzar con alguno de los packs disponibles y luego personalizarlos según tus necesidades.</p>
         </div>
         <div class="row d-flex justify-content-center">
             @foreach($packs as $pack)

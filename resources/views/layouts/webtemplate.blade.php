@@ -124,7 +124,7 @@
                         <h2 class="mb-4">Contacto</h2>
                         <p class="mb-4">
                             ¿Listo para comenzar su próximo proyecto?
-                            Contáctenos para una consulta gratuita.
+                            Contáctenos para una consulta.
                         </p>
                         <div class="d-flex align-items-center mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
