@@ -31,8 +31,8 @@
                     Creamos soluciones de software innovadoras que impulsan el crecimiento empresarial
                     y el avance tecnológico.
                 </p>
-                <a href="#contact" class="btn btn-light btn-lg me-3">
-                    Solicitar presupuesto gratis</a>
+                <a href="#contact" class="btn btn-light btn-lg mb-3">
+                    Solicitar presupuesto</a>
             </div>
             <div class="col-lg-6">
                 <div class="d-flex justify-content-center">
@@ -72,20 +72,24 @@
     </div>
 </section>
 
-<section id="about" class="py-5">
+<section id="about">
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="display-5 fw-bold mb-3 ">Nosotros</h2>
-            <p class="lead text-muted">Somos un equipo de desarrolladores apasionados, dedicados a crear soluciones innovadoras</p>
+            <p class="lead text-muted">Somos una empresa de desarrolladores apasionados, dedicados a crear soluciones innovadoras junto a cada cliente.</p>
         </div>
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0"><img
                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
                     alt="Team collaboration" class="img-fluid rounded shadow-lg"></div>
             <div class="col-lg-6">
-                <h3 class="mb-4">Construyendo el mañana con la tecnología de hoy</h3>
-                <p class="lead mb-4">En MR Soluciones Digitales, combinamos experiencia técnica con
-                    pensamiento innovador, para ofrecer soluciones de software de vanguardia que impulsan el crecimiento empresarial.
+                <h3 class="mb-4">Agilidad y excelencia para hacer crecer tu negocio</h3>
+                <p class="mb-4">
+                    En MR Soluciones Digitales impulsamos tu empresa aplicando las mejores metodologías de gestión de proyectos,
+                    lo que nos permite entregar soluciones rápidas, adaptables y alineadas con tus objetivos estratégicos.
+                    Nuestra combinación de experiencia técnica, innovación y enfoque en el cliente garantiza
+                    proyectos bien gestionados, servicios de calidad y resultados que generan valor real.
+                    Más que proveedores de software, somos tu socio tecnológico para construir el futuro de tu negocio.
                 </p>
                 <div class="row g-4">
                     <div class="col-md-4">
@@ -114,7 +118,7 @@
                                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                                 </svg></div>
                             <h4 class="fw-bold mb-1">1000+</h4>
-                            <p class="text-muted">Usuarios Activos</p>
+                            <p class="text-muted">Usuarios</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -136,28 +140,13 @@
     </div>
 </section>
 
-<section id="services" class="py-5 bg-light">
+<section id="services" class="bg-light">
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="display-5 fw-bold mb-3">Servicios</h2>
+            <p class="lead text-muted">El valor tecnológico que tu negocio necesita para crecer y destacar en el mercado.</p>
         </div>
         <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
-                        <div class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code2 ">
-                                <path d="m18 16 4-4-4-4"></path>
-                                <path d="m6 8-4 4 4 4"></path>
-                                <path d="m14.5 4-5 16"></path>
-                            </svg></div>
-                        <h5 class="card-title">Desarrollo de Software</h5>
-                        <p class="card-text text-muted">Soluciones a medida diseñadas para satisfacer
-                            necesidades y desafíos específicos de cada negocio.</p>
-                    </div>
-                </div>
-            </div>
             <div class="col-md-6 col-lg-4">
                 <a href="#plans" class="card h-100 border-0 shadow-sm text-decoration-none">
                     <div class="card-body text-center">
@@ -168,11 +157,29 @@
                                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                 <path d="M2 12h20"></path>
                             </svg></div>
-                        <h5 class="card-title">Páginas Web</h5>
-                        <p class="card-text text-muted">Diseño e implementación de sitios web profesionales,
-                            agrdables de visitar, optimizados para IA y Google.</p>
+                        <h3 class="card-title mb-3">Diseño Web</h3>
+                        <p class="card-text text-muted">
+                            Sitios Web profesionales y modernos adaptables a cualquier dispositivo, listos para vender tus productos y servicios.
+                        </p>
                     </div>
                 </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code2 ">
+                                <path d="m18 16 4-4-4-4"></path>
+                                <path d="m6 8-4 4 4 4"></path>
+                                <path d="m14.5 4-5 16"></path>
+                            </svg></div>
+                        <h3 class="card-title mb-3">Desarrollo de Aplicaciones</h3>
+                        <p class="card-text text-muted">
+                            Aplicaciones y sistemas personalizados con tecnologías en la nube, co-creados con el cliente usando metodología ágil.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 shadow-sm">
@@ -189,12 +196,14 @@
                                 <line x1="16" y1="10" x2="16" y2="10"/>
                             </svg>
                         </div>
-                        <h5 class="card-title">Soporte empresarial</h5>
-                        <p class="card-text text-muted">Administración y soporte del capital digital de empresas</p>
+                        <h3 class="card-title mb-3">Soporte IT</h3>
+                        <p class="card-text text-muted">
+                            Brindamos mantenimiento, asistencia técnica y soluciones para la infraestructura tecnológica de tu empresa.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            {{--<div class="col-md-6 col-lg-4">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body text-center">
                         <div class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
@@ -239,12 +248,12 @@
                             activos digitales.</p>
                     </div>
                 </div>
-            </div>
+            </div>--}}
         </div>
     </div>
 </section>
 
-<section id="plans" class="py-5 plans">
+<section id="plans" class="plans">
     <div class="container">
         <div class="text-center mb-5">
             <h3 class="display-6 fw-bold mb-3">Desarrollo Web</h3>
@@ -261,7 +270,7 @@
 
 </section>
 
-<section id="technologies" class="py-5 bg-light">
+<section id="technologies" class="bg-light">
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="display-5 fw-bold mb-3 ">Tecnologías</h2>
@@ -323,18 +332,16 @@
     </div>
 </section>
 
-<section id="portfolio" class="py-5">
+<section id="portfolio" class="">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold mb-3 ">Portfolio</h2>
-            <p class="lead text-muted">Explora nuestros proyectos destacados y recientes</p>
+            <h2 class="display-5 fw-bold mb-3 ">Casos de éxito</h2>
+            <p class="lead text-muted">Conoce algunos casos destacados que garantizan la calidad de nuestro trabajo</p>
         </div>
 
-        <!-- Páginas Web -->
-        <h3 class="mt-5 text-center">Páginas Web</h3>
         <div class="row g-4 d-flex justify-content-around">
 
-            <div class="col-md-6 col-lg-5">
+            <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/ab.webp" alt="Web AB Estudio Jurídico" class="img-fluid rounded mb-3">
@@ -344,10 +351,9 @@
                             centrado en la interacción inmediata de potenciales clientes a través de WhatsApp.
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
-                            <a href="#web-corporativa" class="badge bg-light text-dark">Web Corporativa</a>
+                            <span class="badge bg-light text-dark">Página Web Corporativa</span>
                             <span class="badge bg-light text-dark">Laravel</span>
                             <span class="badge bg-light text-dark">Blog</span>
-                            <span class="badge bg-light text-dark">Mejora contínua</span>
                         </div>
                         <a href="https://abestudiojuridico.com" target="_blank" class="btn btn-outline-dark btn-sm">
                             abestudiojuridico.com
@@ -363,7 +369,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-5">
+            <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/duran.webp" alt="Web terapiaholistica.uy" class="img-fluid rounded mb-3">
@@ -373,7 +379,7 @@
                             integral ofrecida por el cliente.
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
-                            <a href="#web-starter" class="badge bg-light text-dark">Web Starter</a>
+                            <span class="badge bg-light text-dark">Página Web Landing</span>
                             <span class="badge bg-light text-dark">Bootstrap</span>
                             <span class="badge bg-light text-dark">Diseño de marca</span>
                         </div>
@@ -391,18 +397,17 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-5">
+            <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/340-1.webp" alt="Web Vamos por Mas" class="img-fluid rounded mb-3">
-                        <h5>Vamos por más - Lista 340</h5>
+                        <h5>Vamos por más</h5>
                         <p class="text-muted mb-3">
                             Págna web de una agrupación política, que luego de la elección optó por un plan en mejora
                             contínua iterativa.
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
-                            <a href="#web-corporativa" class="badge bg-light text-dark">Web estándar flexible</a>
-                            <span class="badge bg-light text-dark">Laravel</span>
+                            <span class="badge bg-light text-dark">Página Web flexible</span>
                             <span class="badge bg-light text-dark">Blog</span>
                             <span class="badge bg-light text-dark">Mejora contínua</span>
                         </div>
@@ -420,63 +425,25 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-5">
-                <div class="card h-100 border-0 shadow-sm portfolio-card">
-                    <div class="card-body">
-                        <img src="img/adh.webp" alt="Web adh.uy" class="img-fluid rounded mb-3">
-                        <h5>ADH</h5>
-                        <p class="text-muted mb-3">
-                            Sitio web estilo landing de Alianza por La Dignidad Humana, ONG de Uruguay.
-                        </p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <a href="#web-starter" class="badge bg-light text-dark">Web Starter</a>
-                            <span class="badge bg-light text-dark">Bootstrap</span>
-                            <span class="badge bg-light text-dark">UI Deck</span>
-                        </div>
-                        <a href="https://adh.uy" target="_blank" class="btn btn-outline-dark btn-sm">
-                            adh.uy
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Aplicaciones -->
-        <h3 class="mt-5 text-center">Aplicaciones web</h3>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/frutas.jpg" alt="Frutas Del Plata" class="img-fluid rounded mb-3">
                         <h5>Frutas Del Plata</h5>
                         <p class="text-muted mb-3">
-                            Aplicación desarrollada a medida para optimizar la gestión de la empresa Frutas Del Plata SA,
-                            conectándose con la aplicación de facturación electrónica de ZetaSoftware mediante la API de z.uy.
+                            Trabajamos con Frutas del Plata desde 2008, automatizando sus procesos de ventas y logística,
+                            proveyendo desde la infraestructura hasta el desarrollo de software a medida, que mes a mes
+                            crece en valor agregado para la empresa.
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge bg-light text-dark">ZetaSoftware API</span>
-                            <span class="badge bg-light text-dark">Bootstrap</span>
-                            <span class="badge bg-light text-dark">Cloud API</span>
+                            <span class="badge bg-light text-dark">Soporte IT</span>
+                            <span class="badge bg-light text-dark">Automatización y optimización</span>
+                            <span class="badge bg-light text-dark">Software a medida</span>
                         </div>
-                        <!--a href="#" class="btn btn-outline-dark btn-sm">View Details <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg></a-->
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/corcel.jpg" alt="CORCEL" class="img-fluid rounded mb-3">
@@ -487,24 +454,17 @@
                         <p class="text-muted mb-3">
                             Aplicación web usada por 2500 usuarios en simultáneo
                             para el control de resultados del balotage de 2024.
+                            Desarrollada de forma iterativa en un plazo extremadamente corto.
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
                             <span class="badge bg-light text-dark">Full Responsive</span>
                             <span class="badge bg-light text-dark">Chart.js</span>
                             <span class="badge bg-light text-dark">Tables.js</span>
                         </div>
-                        <!--a href="#" class="btn btn-outline-dark btn-sm">View Details <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg></a-->
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/sima.jpg" alt="SIMA" class="img-fluid rounded mb-3">
@@ -517,17 +477,8 @@
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
                             <span class="badge bg-light text-dark">Cloud APP</span>
-                            <span class="badge bg-light text-dark">WhatsApp</span>
-                            <span class="badge bg-light text-dark">Tables.js</span>
+                            <span class="badge bg-light text-dark">WhatsApp Business API</span>
                         </div>
-                        <!--a href="#" class="btn btn-outline-dark btn-sm">View Details <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg></a-->
                     </div>
                 </div>
             </div>
@@ -535,7 +486,7 @@
     </div>
 </section>
 
-{{-- <section id="testimonials" class="py-5 bg-dark text-white">
+{{-- <section id="testimonials" class="bg-dark text-white">
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="display-5 fw-bold mb-3 text-white">Testimonios</h2>
