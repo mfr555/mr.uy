@@ -79,9 +79,9 @@
             <p class="lead text-muted">Somos una empresa de desarrolladores apasionados, dedicados a crear soluciones innovadoras junto a cada cliente.</p>
         </div>
         <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0"><img
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
-                    alt="Team collaboration" class="img-fluid rounded shadow-lg"></div>
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="img/dev1-sm.jpg" alt="Desarrollador trabajando en su computadora" class="img-fluid rounded shadow">
+            </div>
             <div class="col-lg-6">
                 <h3 class="mb-4">Agilidad y excelencia para hacer crecer tu negocio</h3>
                 <p class="mb-4">
