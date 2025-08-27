@@ -15,6 +15,8 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'home']);
-Route::get('/sitemap.xml', [HomeController::class, 'sitemap']);
-Route::get('/calculadoras', [HomeController::class, 'calculadoras']);
+Route::get('/', [HomeController::class, 'home'])->name('home');
+Route::get('/diseno-web', [HomeController::class, 'disenoWeb'])->name('diseno-web');
+Route::get('/sitemap.xml', [HomeController::class, 'sitemap'])->name('sitemap');
+Route::get('/calculadoras', [HomeController::class, 'calculadoras'])->name('calculadoras');
+Route::get('/contacto', [HomeController::class, 'contacto'])->name('contacto');

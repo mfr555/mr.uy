@@ -20,4 +20,13 @@ class HomeController extends Controller
     public function calculadoras(){
         return view('calculadoras');
     }
+
+    public function contacto(){
+        return view('contacto');
+    }
+
+    public function disenoWeb(){
+        $packs = Pack::where('available', true)->orderBy('home_index', 'asc')->get();
+        return view('diseno-web', compact('packs'));
+    }
 }
