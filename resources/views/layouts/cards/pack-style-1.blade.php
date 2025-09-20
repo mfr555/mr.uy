@@ -1,5 +1,6 @@
 @php
     $color = $pack->color ?? 'dark';
+    $cupon_vigente = $cupon != null && $cupon->limite_uso > $cupon->veces_usado && $cupon->valido_hasta > now();
 @endphp
 <div class="card text-center shadow-sm">
     <div class="card-header bg-{{ $color }} text-white position-relative">
@@ -17,15 +18,25 @@
         <div class="d-flex justify-content-center align-items-baseline">
             <small class="my-3">Precio</small>
             <div class="m-1"></div>
-            <h3 class="my-2 text-{{ $color }} h2">U$S {{ $pack->offer_price }}</h3>
-            <small class="m-3 text-{{ $color }}"><del>U$S {{ $pack->price }}</del></small>
+            @if ($cupon && $cupon_vigente)
+                <h3 class="my-2 text-{{ $color }} h2">
+                    U$S {{ round($pack->price * (100 - $cupon->porcentaje_descuento) / 100) }}
+                </h3>
+                <small class="m-3 text-{{ $color }}"><del>U$S {{ $pack->price }}</del></small>
+                <br>
+
+            @else
+                <h3 class="my-2 text-{{ $color }} h2">
+                    U$S {{ $pack->price }}
+                </h3>
+            @endif
         </div>
 
         <table class="table text-start">
             <tbody>
                 @foreach(json_decode($pack->items, true) as $item)
                     <tr>
-                        <td>{!! str_replace('@', '<span class="text-primary">@</span>', str_replace('tuempresa.com.uy', '<span class="text-primary">tuempresa.com.uy</span>', $item['name'])) !!}</td>
+                        <td>{!! str_replace('@', '<span class="text-primary">@</span>', str_replace('tuempresa.uy', '<span class="text-primary">tuempresa.uy</span>', $item['name'])) !!}</td>
                         <td>
                             @if($item['included'])
                                 <i class="fa fa-check-circle text-success" aria-hidden="true"></i>

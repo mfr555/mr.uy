@@ -260,6 +260,18 @@
             <p class="lead text-muted">Puedes comenzar con alguno de los packs disponibles y luego personalizarlos según tus necesidades.</p>
         </div>
         <div class="row d-flex justify-content-center">
+            @php
+                $cupon_vigente = $cupon != null && $cupon->limite_uso > $cupon->veces_usado && $cupon->valido_hasta > now();
+            @endphp
+            @if ($cupon_vigente)
+                <div class="col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <span class="badge badge-sm bg-secondary mx-3">{{ $cupon->codigo }}</span>
+                    <small class="text-secondary">
+                        Cupón aplicado de <b>{{ $cupon->porcentaje_descuento }}%</b>
+                        válido hasta el {{ \Carbon\Carbon::parse($cupon->valido_hasta)->translatedFormat('d/m/Y') }} o agotar stock.
+                    </small>
+                </div>
+            @endif
             @foreach($packs as $pack)
                 <div id="pack_{{ $pack->id }}" class="col-md-4 mb-4">
                     @include('layouts.cards.pack-style-1', ['pack' => $pack])
