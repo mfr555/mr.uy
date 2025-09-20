@@ -74,40 +74,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Inicio</a>
+                        <a class="nav-link" href="{{ request()->is('/') ? '' : url('/') }}#home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Nosotros</a>
+                        <a class="nav-link" href="{{ request()->is('/') ? '' : url('/') }}#about">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
+                        <a class="nav-link" href="{{ request()->is('/') ? '' : url('/') }}#services">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Casos de éxito</a>
+                        <a class="nav-link" href="{{ request()->is('/') ? '' : url('/') }}#portfolio">Casos de éxito</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                            Contacto
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="https://www.linkedin.com/company/mr-soluciones-digitales" target="_blank"><i class="fab fa-linkedin-in pr-2"></i>
-                                LinkedIn</a>
-                            </li>
-                            <li><a class="dropdown-item" href="https://www.instagram.com/solucionesdigitalesmr" target="_blank"><i class="fab fa-instagram pr-2"></i>
-                                Instagram</a
-                                ></li>
-                            <li><a class="dropdown-item" href="https://www.facebook.com/mrsolucionesdigitales" target="_blank"><i class="fab fa-facebook-f pr-2"></i>
-                                Facebook</a>
-                            </li>
-                            <li><a class="dropdown-item" href="https://twitter.com/mrsolucionesdig" target="_blank"><i class="fab fa-x-twitter pr-2"></i>
-                                Twitter</a>
-                            </li>
-                            <li><a class="dropdown-item text-success" href="https://api.whatsapp.com/send?phone=59897807023" target="_blank"><i class="fab fa-whatsapp pr-2"></i>
-                                WhatsApp</a>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#contact">Contacto</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -121,11 +100,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-6 mb-4 mb-lg-0">
-                        <h2 class="mb-4">Contacto</h2>
-                        <p class="mb-4">
-                            ¿Listo para comenzar su próximo proyecto?
-                            Contáctenos para una consulta.
-                        </p>
+                        <h2 class="mb-4">¿Listo para potenciar tu negocio?</h2>
+
                         <div class="d-flex align-items-center mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail me-3">
@@ -134,7 +110,12 @@
                             </svg>
                             <a class="text-white" href="mailto:contacto@mr.uy" target="_blank">
                                 contacto@mr.uy</a>
-                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fab fa-whatsapp me-3" aria-hidden="true" style="font-size: 1.6rem;"></i>
+                            <a class="text-white" href="https://api.whatsapp.com/send?phone=59897807023" target="_blank">
+                                +598 97807023</a>
+                        </div>
                         <div class="d-flex align-items-center mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone me-3">
@@ -150,9 +131,7 @@
                                 <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                            <span>
-                                Rio Negro y Av. 18 de julio - Montevideo, Uruguay
-                            </span>
+                            <span>Rio Negro y Av. 18 de julio - Montevideo, Uruguay</span>
                         </div>
 
                         <hr>
@@ -183,19 +162,19 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
+                        <h3 class="mb-4 h5">
+                            Escríbenos un WhatsApp
+                        </h3>
                         <form>
                             <div class="mb-3">
                                 <textarea id="mensaje" class="form-control mb-2" rows="5" placeholder="Su mensaje"></textarea>
                                 <input id="nombre" type="text" class="form-control" placeholder="Su nombre">
                             </div>
-
                             <script src="js/whatsappform.js"></script>
                             <div class="d-flex justify-content-end">
                                 <a id="enviarwpp" href="https://wa.me/59897807023" target="_blank" class="btn btn-success">
-                                    Enviar WhatsApp</a>
+                                    Abrir WhatsApp</a>
                             </div>
-
-
                         </form>
                     </div>
                 </div>
@@ -205,8 +184,9 @@
 
     <footer class="bg-dark text-white text-center py-4">
         <p class="mb-0">
+            <span>mr.uy</span>
             <i class="fa fa-code" aria-hidden="true"></i>
-            Desarrollado por <a href="https://mr.uy" class="text-secondary">MR Soluciones Digitales</a> © {{ date('Y') }}
+            Desarrollado por MR Soluciones Digitales © {{ date('Y') }}
         </p>
     </footer>
 

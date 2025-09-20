@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,8 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/diseno-web', [HomeController::class, 'disenoWeb'])->name('diseno-web');
 Route::get('/sitemap.xml', [HomeController::class, 'sitemap'])->name('sitemap');
 Route::get('/calculadoras', [HomeController::class, 'calculadoras'])->name('calculadoras');
-Route::get('/contacto', [HomeController::class, 'contacto'])->name('contacto');
+
+Route::prefix('contacto')->group(function () {
+    Route::get('/', [HomeController::class, 'contacto'])->name('contacto');
+    Route::post('/send', [MailController::class, 'send'])->name('contacto.send');
+});

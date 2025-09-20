@@ -1,145 +1,49 @@
 @extends('layouts.webtemplate')
-
-@section('title', 'Diseño Web | Desarrollo en la nube | Soporte IT | MR Soluciones Digitales')
-@section('description', 'MR Soluciones Digitales ofrece desarrollo de software a medida, aplicaciones web y móviles, servicios cloud y ciberseguridad para impulsar el crecimiento empresarial.')
-@section('keywords', 'desarrollo de software, aplicaciones web, aplicaciones móviles, soporte IT, servicios cloud, ciberseguridad, MR Soluciones Digitales')
+@section('title', 'Contacto | MR Soluciones Digitales')
+@section('description', 'Contáctanos para solicitar presupuesto, asesoría tecnológica o soporte IT. MR Soluciones Digitales te ayuda a impulsar tu empresa con soluciones innovadoras.')
+@section('keywords', 'contacto, presupuesto, asesoría tecnológica, soporte IT, MR Soluciones Digitales')
 @section('image', 'https://images.unsplash.com/photo-1581472723648-909f4851d4ae?auto=format&fit=crop&w=800&q=80')
 
 @section('content')
-<script>
-    //pulse
-    document.addEventListener('DOMContentLoaded', () => {
-        const colors = ['var(--naranja)', 'var(--violeta)', '#ffffff'];
-        let index = 0;
 
-        setInterval(() => {
-        index = (index + 1) % colors.length;
-        document.querySelectorAll('.pulse').forEach(el => {
-            el.style.color = colors[index];
-        });
-        }, 3000);
-    });
-</script>
-
-<section id="home" class="bg-dark text-white min-vh-90 d-flex align-items-center">
+<section id="contacto">
     <div class="container">
+        <div class="text-center mb-3">
+            <h2 class="display-5 fw-bold mb-3">Contacto</h2>
+            <p class="lead text-muted mb-4">
+                Tu consulta es el primer paso hacia una solución adecuada para tu proyecto.
+            </p>
+        </div>
         <div class="row align-items-center">
-            <div class="col-lg-6">
-                <h2 class="display-4 fw-bold mb-4">Tecnología al servicio de tu empresa</h2>
-                <h1 class="lead pulse">Diseño Web, Desarrollo de aplicaciones y Soporte IT para Empresas</h1>
-                <p class="lead mb-4">
-                    Creamos soluciones de software innovadoras que impulsan el crecimiento empresarial
-                    y el avance tecnológico.
-                </p>
-                <a href="#contact" class="btn btn-light btn-lg mb-3">
-                    Solicitar presupuesto</a>
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img alt="Enviar un email" src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=800&h=800&fit=crop" class="img-fluid rounded shadow-lg">
             </div>
             <div class="col-lg-6">
-                <div class="d-flex justify-content-center">
-                    <div class="position-relative">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48"
-                            height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-code position-absolute" style="top: 20%; left: 18%;">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="lucide lucide-database position-absolute"
-                            style="top: 40%; right: 10%;">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                            <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
-                            <path d="M3 12A9 3 0 0 0 21 12"></path>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="lucide lucide-globe position-absolute"
-                            style="top: 14%; left: 55%;">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                            <path d="M2 12h20"></path>
-                        </svg>
-                        <img src="https://images.unsplash.com/photo-1581472723648-909f4851d4ae?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
-                            alt="Modern Office Space" class="img-fluid rounded-circle shadow-lg"
-                            style="width: 400px; height: 400px; object-fit: cover;">
-
-                        <img src="img/logo-blanco.svg" alt="Logo MR" class="position-absolute" style="width: 80px; height: 80px; top: 80%; left: 50%; transform: translate(-50%, -50%);">
+                <h3 class="mb-4">¿Cómo podemos ayudarte?</h3>
+                <form action="{{ route('contacto.send') }}" method="POST" class="mb-4">
+                    @csrf
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Escribe tu nombre" required>
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Cuéntanos qué necesitas..." required></textarea>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </section>
 
-<section id="about">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold mb-3 ">Nosotros</h2>
-            <p class="lead text-muted">Somos una empresa de desarrolladores apasionados, dedicados a crear soluciones innovadoras junto a cada cliente.</p>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0"><img
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
-                    alt="Team collaboration" class="img-fluid rounded shadow-lg"></div>
-            <div class="col-lg-6">
-                <h3 class="mb-4">Agilidad y excelencia para hacer crecer tu negocio</h3>
-                <p class="mb-4">
-                    En MR Soluciones Digitales impulsamos tu empresa aplicando las mejores metodologías de gestión de proyectos,
-                    lo que nos permite entregar soluciones rápidas, adaptables y alineadas con tus objetivos estratégicos.
-                    Nuestra combinación de experiencia técnica, innovación y enfoque en el cliente garantiza
-                    proyectos bien gestionados, servicios de calidad y resultados que generan valor real.
-                    Más que proveedores de software, somos tu socio tecnológico para construir el futuro de tu negocio.
-                </p>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="text-center">
-                            <div class="text-secondary mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="32"
-                                    height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-target text-naranja">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <circle cx="12" cy="12" r="6"></circle>
-                                    <circle cx="12" cy="12" r="2"></circle>
-                                </svg></div>
-                            <h4 class="fw-bold mb-1">5+</h4>
-                            <p class="text-muted">Años de Experiencia</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="text-center">
-                            <div class="text-secondary mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="32"
-                                    height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-users text-naranja">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg></div>
-                            <h4 class="fw-bold mb-1">1000+</h4>
-                            <p class="text-muted">Usuarios</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="text-center">
-                            <div class="text-secondary mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="32"
-                                    height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-award text-naranja">
-                                    <circle cx="12" cy="8" r="6"></circle>
-                                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
-                                </svg></div>
-                            <h4 class="fw-bold mb-1">50+</h4>
-                            <p class="text-muted">Proyectos Completados</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+<!--
 <section id="services" class="bg-light">
     <div class="container">
         <div class="text-center mb-5">
@@ -253,22 +157,6 @@
     </div>
 </section>
 
-<section id="plans" class="plans">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h3 class="display-6 fw-bold mb-3">Diseño Web</h3>
-            <p class="lead text-muted">Puedes comenzar con alguno de los packs disponibles y luego personalizarlos según tus necesidades.</p>
-        </div>
-        <div class="row d-flex justify-content-center">
-            @foreach($packs as $pack)
-                <div id="pack_{{ $pack->id }}" class="col-md-4 mb-4">
-                    @include('layouts.cards.pack-style-1', ['pack' => $pack])
-                </div>
-            @endforeach
-        </div>
-    </div>
-
-</section>
 
 <section id="technologies" class="bg-light">
     <div class="container">
@@ -485,7 +373,7 @@
         </div>
     </div>
 </section>
-
+-->
 {{-- <section id="testimonials" class="bg-dark text-white">
     <div class="container">
         <div class="text-center mb-5">

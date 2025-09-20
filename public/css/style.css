@@ -1,3 +1,9 @@
+:root {
+    --naranja: #ed373d;
+    --naranja-medio: #db5640;
+    --naranja-claro: #de784f;
+    --violeta: #942687
+}
 .btn,
 .form-control {
     border-radius: .5rem
@@ -8,9 +14,14 @@
     background-color: var(--naranja)
 }
 
-:root {
-    --naranja: #ed373d;
-    --violeta: #942687
+.bg-naranja-claro,
+.btn-naranja-claro{
+    background-color: var(--naranja-claro)
+}
+
+.bg-naranja-medio,
+.btn-naranja-medio{
+    background-color: var(--naranja-medio)
 }
 
 body {

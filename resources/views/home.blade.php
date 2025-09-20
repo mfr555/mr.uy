@@ -354,7 +354,7 @@
         <div class="row g-4 d-flex justify-content-around">
 
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm portfolio-card">
+                <div class="card border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/ab.webp" alt="Web AB Estudio Jurídico" class="img-fluid rounded mb-3">
                         <h5>AB Estudio Jurídico</h5>
@@ -363,26 +363,32 @@
                             centrado en la interacción inmediata de potenciales clientes a través de WhatsApp.
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge bg-light text-dark">Página Web Corporativa</span>
+                            <span class="badge bg-naranja-medio text-light">Página Web Corporativa</span>
                             <span class="badge bg-light text-dark">Laravel</span>
                             <span class="badge bg-light text-dark">Blog</span>
+                            <span class="badge bg-light text-dark">SEO</span>
+                            <span class="badge bg-light text-dark">Mejora contínua</span>
                         </div>
-                        <a href="https://abestudiojuridico.com" target="_blank" class="btn btn-outline-dark btn-sm">
-                            abestudiojuridico.com
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg></a>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://abestudiojuridico.com" target="_blank" class="btn btn-outline-dark btn-sm p-2">
+                                Visitar abestudiojuridico.com
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-external-link ms-1">
+                                    <path d="M15 3h6v6"></path>
+                                    <path d="M10 14 21 3"></path>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm portfolio-card">
+                <div class="card border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/duran.webp" alt="Web terapiaholistica.uy" class="img-fluid rounded mb-3">
                         <h5>Terapia Holística - Sebastián Durán</h5>
@@ -391,26 +397,30 @@
                             integral ofrecida por el cliente.
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge bg-light text-dark">Página Web Landing</span>
+                            <span class="badge bg-naranja-medio text-light">Página Web Landing</span>
+                            <span class="badge bg-light text-dark">SEO</span>
                             <span class="badge bg-light text-dark">Bootstrap</span>
                             <span class="badge bg-light text-dark">Diseño de marca</span>
                         </div>
-                        <a href="https://terapiaholistica.uy" target="_blank" class="btn btn-outline-dark btn-sm">
-                            terapiaholistica.uy
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg></a>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://terapiaholistica.uy" target="_blank" class="btn btn-outline-dark btn-sm p-2">
+                                terapiaholistica.uy
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-external-link ms-1">
+                                    <path d="M15 3h6v6"></path>
+                                    <path d="M10 14 21 3"></path>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm portfolio-card">
+                <div class="card border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/340-1.webp" alt="Web Vamos por Mas" class="img-fluid rounded mb-3">
                         <h5>Vamos por más</h5>
@@ -419,26 +429,31 @@
                             contínua iterativa.
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge bg-light text-dark">Página Web flexible</span>
+                            <span class="badge bg-naranja-medio text-light">Página Web Flexible</span>
+                            <span class="badge bg-light text-dark">SEO</span>
                             <span class="badge bg-light text-dark">Blog</span>
                             <span class="badge bg-light text-dark">Mejora contínua</span>
                         </div>
-                        <a href="https://vamospormas.uy" target="_blank" class="btn btn-outline-dark btn-sm">
-                            vamospormas.uy
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-external-link ms-1">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg></a>
+
+                        <div class="d-flex justify-content-center">
+                            <a href="https://vamospormas.uy" target="_blank" class="btn btn-outline-dark btn-sm p-2">
+                                vamospormas.uy
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-external-link ms-1">
+                                    <path d="M15 3h6v6"></path>
+                                    <path d="M10 14 21 3"></path>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm portfolio-card">
+                <div class="card border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/frutas.jpg" alt="Frutas Del Plata" class="img-fluid rounded mb-3">
                         <h5>Frutas Del Plata</h5>
@@ -448,15 +463,16 @@
                             crece en valor agregado para la empresa.
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge bg-naranja-medio text-light">Software a medida</span>
                             <span class="badge bg-light text-dark">Soporte IT</span>
                             <span class="badge bg-light text-dark">Automatización y optimización</span>
-                            <span class="badge bg-light text-dark">Software a medida</span>
+                            <span class="badge bg-light text-dark">Mejora Contínua</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm portfolio-card">
+                <div class="card border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/corcel.jpg" alt="CORCEL" class="img-fluid rounded mb-3">
                         <h5>CORCEL</h5>
@@ -469,15 +485,16 @@
                             Desarrollada de forma iterativa en un plazo extremadamente corto.
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge bg-light text-dark">Full Responsive</span>
-                            <span class="badge bg-light text-dark">Chart.js</span>
-                            <span class="badge bg-light text-dark">Tables.js</span>
+                            <span class="badge bg-naranja-medio text-light">Micro-SaaS</span>
+                            <span class="badge bg-light text-dark">Sector Político</span>
+                            <span class="badge bg-light text-dark">Manejo de Datos</span>
+                            <span class="badge bg-light text-dark">Reportes envivo</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm portfolio-card">
+                <div class="card border-0 shadow-sm portfolio-card">
                     <div class="card-body">
                         <img src="img/sima.jpg" alt="SIMA" class="img-fluid rounded mb-3">
                         <h5>SIMA</h5>
@@ -488,8 +505,8 @@
                             CRM para la gestión de contactos con clientes, seguimiento de ventas y análisis de datos
                         </p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge bg-light text-dark">Cloud APP</span>
-                            <span class="badge bg-light text-dark">WhatsApp Business API</span>
+                            <span class="badge bg-naranja-medio text-light">Cloud App</span>
+                            <span class="badge bg-light text-dark">CRM</span>
                         </div>
                     </div>
                 </div>
