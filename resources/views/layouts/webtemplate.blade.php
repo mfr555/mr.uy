@@ -59,6 +59,7 @@
         caret-color: auto;
     }
     </style>
+    @yield('head')
 </head>
 
 <body>
@@ -163,7 +164,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <h3 class="mb-4 h5">
-                            Escríbenos un WhatsApp
+                            Envianos un WhatsApp
                         </h3>
                         <form>
                             <div class="mb-3">
@@ -192,7 +193,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="js/main.js"></script>
     <script>
         lucide.createIcons();
     </script>

@@ -6,6 +6,10 @@
 
 @section('content')
 
+@section('head')
+    <script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITEKEY') }}"></script>
+@endsection
+
 <section id="contacto">
     <div class="container">
         <div class="text-center mb-3">
@@ -20,7 +24,7 @@
             </div>
             <div class="col-lg-6">
                 <h3 class="mb-4">¿Cómo podemos ayudarte?</h3>
-                <form action="{{ route('contacto.send') }}" method="POST" class="mb-4">
+                <form id="form-contacto" class="mb-4">
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre</label>
@@ -37,6 +41,8 @@
                     <div class="mb-3 d-flex justify-content-end">
                         <button type="submit" class="btn btn-primary">Enviar mensaje</button>
                     </div>
+
+                    @include('components.google-recaptcha')
                 </form>
             </div>
         </div>
