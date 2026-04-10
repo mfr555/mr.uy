@@ -12,7 +12,16 @@
         gtag('js', new Date());
         gtag('config', 'G-E74EGK7DSD');
     </script>
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MZ5GKQ75');
+        </script>
+    <!-- End Google Tag Manager -->
     <meta name="google-site-verification" content="mewSjhOo7feycgafwDZRMxYkEpPf-xUI8RedZjC0wkA">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes">
     <meta name="google-site-verification" content="mewSjhOo7feycgafwDZRMxYkEpPf-xUI8RedZjC0wkA">
     <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -25,7 +34,7 @@
     <meta name="keywords" content="@yield('keywords')">
     <meta name="author" content="MR Soluciones Digitales">
     <meta name="robots" content="index, follow">
-    <meta name="business" content="Matías Fabián Rodríguez Díaz">
+    <meta name="business" content="Matías Fabián Rodriguez Díaz">
 
     <!-- Open Graph (Meta) Meta Tags -->
     <meta property="og:title" content="@yield('title')">
@@ -35,6 +44,7 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:locale" content="es_ES">
     <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="1065931209083295">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -63,9 +73,12 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ5GKQ75" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="{{ request()->is('/') ? '' : url('/') }}">
                 <i class="lucide-code-2 me-2"></i>
                 MR Soluciones Digitales</span>
             </a>

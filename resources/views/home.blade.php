@@ -31,7 +31,7 @@
                     Creamos soluciones de software innovadoras que impulsan el crecimiento empresarial
                     y el avance tecnológico.
                 </p>
-                <a href="#contact" class="btn btn-light btn-lg mb-3">
+                <a href="{{ route('contacto') }}" class="btn btn-light btn-lg mb-3">
                     Solicitar presupuesto</a>
             </div>
             <div class="col-lg-6">

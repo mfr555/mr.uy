@@ -41,6 +41,16 @@
                             </ul>
                         </div>
                     </div>
+
+                    <div class="card m-2">
+                        <div class="card-header">Investigación de operaciones</div>
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="https://simplex.amadeopavazza.from.hr" target="_blank">Método Simplex</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
